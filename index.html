@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout Builder</title>
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Responsive Layout Builder</h1>
+            <p>Build and preview responsive grids easily. Copy the generated HTML and CSS code directly!</p>
+        </header>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="columns">Number of Columns: </label>
+                <input type="number" id="columns" min="1" max="12" value="3">
+            </div>
+        </div>
+
+        <div class="layout-preview">
+            <div class="grid-container" id="grid-container">
+             
+            </div>
+        </div>
+
+        <div class="code-section">
+            <h2>Generated Code</h2>
+            <div class="code-block">
+                <h3>HTML Code</h3>
+                <pre><code id="generated-code-html" class="language-html"></code></pre>
+            </div>
+            <div class="code-block">
+                <h3>CSS Code</h3>
+                <pre><code id="generated-code-css" class="language-css"></code></pre>
+            </div>
+            <button id="copy-button">Copy Code</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
